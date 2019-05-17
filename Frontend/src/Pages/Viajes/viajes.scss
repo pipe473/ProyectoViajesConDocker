@@ -1,0 +1,92 @@
+.viaje{
+    
+    margin: 5% 0 5% 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0% 0% 0% 5%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 40% 0;
+        box-sizing: border-box;
+        margin: 0 0 0% 0;
+        border-radius: 10px; 
+    
+    
+        .texto{
+            width: 70%;
+            background-color: black;
+            color: white;            
+            border-radius: 10px 0 0 0; 
+           
+        }
+    
+        .precio{
+            
+            width: 30%;
+            background-color: yellow;  
+            font-weight: bold; 
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 0 10px 0 0; 
+              
+        }   
+    }
+
+    .listadoViajes{
+        width: 100%;
+        display: flex;
+        // flex-direction: column;
+        margin: 0 5% 0 5%;  
+        
+           
+        
+        
+
+        .row1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            padding-top: 0%;
+            
+            
+            .nameViaje{
+                display: flex;
+                color:black;
+                font-size: 110%;
+                
+                
+                .p{
+                    align-content: flex-end;
+                    text-align: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold; 
+                    
+                }               
+            }
+            
+        }
+
+        .row2{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            padding-top: 0%;
+            .nameViaje{
+                display: flex;
+                color:black;
+                font-size: 110%;                    
+
+            }
+
+        }
+    }
+}
+

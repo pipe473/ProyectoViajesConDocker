@@ -1,0 +1,76 @@
+
+
+.Menu{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 0%;    
+
+    .logo{    
+        width: 20%;
+        text-align: left;
+        padding-left: 5%;        
+            .imagen{
+                width: 50%;
+            }    
+            
+            .titulo{
+                display: flex;                
+
+            }
+        }
+        .Nav{        
+        width: 50%;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+            
+        
+         a{
+                padding-right: 2%;
+                text-decoration: none;
+                color: black;
+           }
+
+           a:hover {
+                font-weight: bold;
+                color:yellow;
+                -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                transform: scale(1.2);
+           }      
+        }        
+        .Social-Media{
+            width: 30% !important;
+            text-align: right;
+            padding-right: 1%;  
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+
+                a{
+                    padding-right: 4%;
+                    font-size: 1.6em;
+                    color: black;
+                    
+                }
+
+                a:hover {
+                    color:yellow;
+                    -webkit-transform: scale(1.6);
+                    -ms-transform: scale(1.6);
+                    transform: scale(1.6);
+                    
+               }            
+            } 
+            
+                
+            
+    }
+
+

@@ -1,0 +1,61 @@
+
+     .formulari {
+
+         
+         display: flex;
+         background-image: url('/assets/images/Register.jpeg');
+         background-size: cover;
+         background-position: center;
+         align-items: center;
+         padding: 20% 0 20% 0;
+         width: 100%;
+         
+         
+         .registrado{           
+             
+             display: flex;
+             color: black;  
+             align-items: center;
+             margin: auto;
+             font-size: 1.2rem;  
+             padding: 10px;      
+            }
+            
+            .contenido{ 
+                display: flex; 
+                margin: auto; 
+                background-color:rgba(182, 174, 174, 0.712);
+                box-sizing: border-box;
+                padding: 10% 10% 10% 10%;
+                border-radius: 35px 35px 35px 35px;
+
+                .registrarse{
+                    display: flex;
+                    position: absolute;
+                    top: 48%;
+                    font-size: 2rem;
+                    text-align: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                    }
+             
+             .formun{
+                display: flex;
+                flex-direction: column;
+                
+                input{
+
+                    margin: 5% 0 0 0;                    
+                    
+                    
+                }
+            }
+
+        }
+    }
+
+
+
+
+
+   
+

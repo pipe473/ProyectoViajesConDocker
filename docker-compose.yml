@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  
+  backend:
+    image: node:10.15.3
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+    command: bash -c "cd /usr/src/app && npm install && npm run dev"
+    container_name: "Backend"
+    volumes:
+      - ./Backend/:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+        - 8080:8080
+   
+  frontend:
+    image: node:10.15.3
+    depends_on:
+      - mongodb
+    command: bash -c "cd /usr/src/app && npm install && npm start"
+    container_name: "frontend"
+    volumes:
+      - ./Frontend/:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+        - 3000:3000
+    
+
+  mongodb:
+    image: mongo:latest
+    container_name: "Mongodb"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./MongoDB/db:/data/db
+    ports:
+        - 27018:27017
+    command: mongod --smallfiles --logpath=/dev/null 
+    restart: always
+
+    
+    
